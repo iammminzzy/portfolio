@@ -10,6 +10,7 @@
 </a>
 
 <h3>Portfolio</h3>
+<p>🚧 wip 🚧</p>
 <a href="/"><strong>View Demo »</strong></a>
 <br />
 <br />
@@ -33,11 +34,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -87,8 +84,6 @@ This is an example of how to list things you need to use the software and how to
    ```js
    const API_KEY = "ENTER YOUR API";
    ```
-
-### Built with
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
