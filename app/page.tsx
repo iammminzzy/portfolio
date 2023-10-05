@@ -1,3 +1,11 @@
+import Link from "next/link";
+import Header from "../components/header/Header";
+
 export default function Home() {
-  return <h1 className="text-xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Header />
+      <Link href="/users">Link</Link>
+    </>
+  );
 }
