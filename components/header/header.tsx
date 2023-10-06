@@ -1,6 +1,8 @@
 import Link from "next/link";
-import NavItem from "./NavItem";
 import Image from "next/image";
+
+import { links } from "@/libs/data";
+import NavItem from "./NavItem";
 
 export default function Header() {
   return (
@@ -11,10 +13,11 @@ export default function Header() {
         </Link>
         <div className="flex items-center gap-5">
           <ul className="flex gap-7">
-            <NavItem item="about">About</NavItem>
-            <NavItem item="experience">Experience</NavItem>
-            <NavItem item="projects">Projects</NavItem>
-            <NavItem item="contact">Contact</NavItem>
+            {links.map(({ name, hash }) => (
+              <NavItem key={name} hash={hash}>
+                {name}
+              </NavItem>
+            ))}
           </ul>
           <Link
             href="https://docs.google.com/document/d/1zpXI_ZdCXFcY6tfKdABwmsJEuToYAy7cf42vugQF64k/edit?usp=sharing"

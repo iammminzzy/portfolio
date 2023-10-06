@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { ReactNode, useState } from "react";
-import styled from "styled-components";
 
 interface NavItemProps {
-  item: string;
+  hash: string;
   children: ReactNode;
 }
 
-const NavItem = ({ item, children }: NavItemProps) => {
+const NavItem = ({ hash, children }: NavItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -19,13 +18,14 @@ const NavItem = ({ item, children }: NavItemProps) => {
   const handleLeave = () => {
     setIsHovered(false);
   };
+
   return (
     <li className="relative">
       <Link
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
         className="text-white hover:text-[#ffcd00]"
-        href={`/#${item}`}
+        href={`/${hash}`}
       >
         {children}
       </Link>
