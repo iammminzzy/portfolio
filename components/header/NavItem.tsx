@@ -24,7 +24,7 @@ const NavItem = ({ hash, children }: NavItemProps) => {
       <Link
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
-        className="text-white hover:text-[#ffcd00]"
+        className="text-stone-950 hover:font-semibold"
         href={`/${hash}`}
       >
         {children}
@@ -32,9 +32,9 @@ const NavItem = ({ hash, children }: NavItemProps) => {
       <div
         className={`${
           isHovered
-            ? "opacity-100 translate-x-0 "
-            : "opacity-0 translate-x-full"
-        } absolute mt-[2px] w-full h-[1.5px] bg-[#ffcd00]  transform ease-in-out duration-300`}
+            ? "opacity-100 translate-x-0 w-full"
+            : "opacity-0 translate-x-full w-0"
+        } absolute mt-[2px] h-[2px] bg-stone-950 transform ease-in-out duration-300`}
       ></div>
     </li>
   );
