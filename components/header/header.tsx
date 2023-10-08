@@ -7,7 +7,7 @@ import NavItem from "./NavItem";
 
 export default function Header() {
   return (
-    <header className="flex w-full h-[60px] fixed px-[40px] bg-amber-400">
+    <header className="flex w-full h-[60px] fixed px-[40px] bg-transparent font-clashDisplay">
       <nav className="flex w-full justify-between items-center">
         <Link href="/" className="text-white text-2xl">
           <Image src="/profile.png" alt="profile logo" width={35} height={35} />
