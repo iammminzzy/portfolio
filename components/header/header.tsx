@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 import { links } from "@/libs/data";
@@ -9,8 +9,15 @@ export default function Header() {
   return (
     <header className="flex w-full h-[60px] fixed px-[40px] bg-transparent font-clashDisplay">
       <nav className="flex w-full justify-between items-center">
-        <Link href="/" className="text-white text-2xl">
-          <Image src="/profile.png" alt="profile logo" width={35} height={35} />
+        <Link href="/" className="font-semibold text-amber-400 text-2xl">
+          {/* <Image
+            src="/profile.png"
+            alt="profile logo"
+            width={25}
+            height={25}
+            className="inline"
+          /> */}
+          MINJEE
         </Link>
         <div className="flex items-center gap-7">
           <ul className="flex gap-5">
