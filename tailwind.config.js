@@ -7,8 +7,34 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        container: "1440px",
+        contentContainer: "1140px",
+        containerSm: "1024px",
+        containerXs: "768px",
+      },
+      screens: {
+        xs: "320px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+      },
       fontFamily: {
-        clashDisplay: ["var(--font-clash-display)"],
+        titleFont: ["var(--font-clash-display)", "sans-serif"],
+        bodyFont: ["var(--font-DM-Sans)", "sans-serif"],
+      },
+      boxShadow: {
+        HeaderShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
+      },
+      colors: {
+        sectionColor: "rgb(255, 251, 235)",
+        light: "#ffffff",
+        dark: "rgb(12 10 9)",
+        pointYellow: "rgb(251 191 36)",
       },
     },
   },

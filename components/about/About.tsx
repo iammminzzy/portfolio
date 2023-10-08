@@ -1,25 +1,39 @@
 import Image from "next/image";
 
+import { highlightIcon, profileImg } from "@/images";
+
 const About = () => {
   return (
-    <section className="flex flex-col justify-center py-16 px-10 w-full h-[100vh] bg-amber-50">
-      <div className="flex flex-col gap-5 font-clashDisplay">
-        <h1 className="font-clashDisplay font-semibold text-[125px]">
+    <section
+      id="#about"
+      className="flex flex-col justify-center px-[10%] w-full h-screen"
+    >
+      <div className="flex flex-col gap-5 items-center">
+        <h1 className="font-titleFont font-semibold text-[125px] text-center">
           <span>Hi!</span>
           &nbsp;
           <span>I&#39;m</span>
           &nbsp;
-          <Image
-            src="/profile.png"
-            alt="my image in About section"
-            width={100}
-            height={100}
-            className="inline"
-          />
+          <span className="relative">
+            <Image
+              src={highlightIcon}
+              alt="Icon to highlight my image in the About section"
+              width={50}
+              height={50}
+              className="absolute left-[-1.75rem] top-[-1rem] inline"
+            />
+            <Image
+              src={profileImg}
+              alt="My image in About section"
+              width={120}
+              height={120}
+              className="inline"
+            />
+          </span>
           &nbsp;
           <span>Minjee.</span>
         </h1>
-        <p className="font-mono text-2xl">
+        <p className="font-bodyFont text-2xl text-center">
           Professional{" "}
           <strong>
             <u>Front End Developer</u>
