@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 
+import { slideDownVariants } from "@/components/common/Motion";
+
 interface NavItemProps {
   id: number;
   hash: string;
@@ -24,8 +26,9 @@ const NavItem = ({ id, hash, children }: NavItemProps) => {
   return (
     <motion.li
       className="relative"
-      initial={{ y: -10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      variants={slideDownVariants}
+      initial="initial"
+      animate="animate"
       transition={{ duration: 0.1, delay: id * 0.1 }}
     >
       <Link

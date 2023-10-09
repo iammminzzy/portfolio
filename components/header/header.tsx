@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-import { MotionDiv, MotionLink } from "@/components/common/Motion";
+import {
+  fadeInVariants,
+  MotionDiv,
+  MotionLink,
+  slideDownVariants,
+} from "@/components/common/Motion";
 import { links } from "@/libs/data";
 
 import NavItem from "./NavItem";
@@ -12,8 +17,9 @@ export default function Header() {
         <MotionLink
           href="/"
           className="font-semibold text-pointYellow text-2xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          variants={fadeInVariants}
+          initial="initial"
+          animate="animate"
           transition={{ duration: 0.5 }}
         >
           MINJEE
@@ -26,11 +32,7 @@ export default function Header() {
               </NavItem>
             ))}
           </ul>
-          <MotionDiv
-            initial={{ y: -10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
+          <MotionDiv variants={slideDownVariants} transition={{ delay: 0.5 }}>
             <Link
               href="/MinjeeSon_Resume.pdf"
               target="_blank"
