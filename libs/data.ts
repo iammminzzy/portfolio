@@ -1,18 +1,14 @@
 export const links = [
   {
+    id: 1,
     name: "About",
     hash: "#about",
   },
   {
+    id: 2,
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { id: 3, name: "Experience", hash: "#experience" },
+  { id: 4, name: "Contact", hash: "#contact" },
 ] as const;

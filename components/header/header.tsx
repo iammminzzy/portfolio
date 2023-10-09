@@ -1,41 +1,52 @@
-// import Image from "next/image";
 import Link from "next/link";
 
+import { MotionDiv, MotionLink } from "@/components/common/Motion";
 import { links } from "@/libs/data";
 
 import NavItem from "./NavItem";
 
 export default function Header() {
   return (
-    <header className="flex w-full h-[60px] fixed px-[40px] bg-transparent font-titleFont">
-      <nav className="flex w-full justify-between items-center">
-        <Link href="/" className="font-semibold text-pointYellow text-2xl">
-          {/* <Image
-            src="/profile.png"
-            alt="profile logo"
-            width={25}
-            height={25}
-            className="inline"
-          /> */}
+    <header className="flex w-full h-20 lg:h-[11vh] fixed top-0 z-50 px-[40px] bg-sectionColor font-titleFont">
+      <nav className="max-w-container mx-auto flex w-full h-full py-1 justify-between items-center">
+        <MotionLink
+          href="/"
+          className="font-semibold text-pointYellow text-2xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           MINJEE
-        </Link>
-        <div className="flex items-center gap-7">
-          <ul className="flex gap-5">
-            {links.map(({ name, hash }) => (
-              <NavItem key={name} hash={hash}>
+        </MotionLink>
+        <div className="mdl:flex items-center gap-7 hidden">
+          <ul className="flex gap-7">
+            {links.map(({ id, name, hash }) => (
+              <NavItem key={id} id={id} hash={hash}>
                 {name}
               </NavItem>
             ))}
           </ul>
-          <Link
-            href="https://docs.google.com/document/d/1zpXI_ZdCXFcY6tfKdABwmsJEuToYAy7cf42vugQF64k/edit?usp=sharing"
-            target="_blank"
-            className="px-2 py-1 border rounded border-dark text-dark text-sm hover:font-bold hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[3px_3px_0_0] hover:transition-all
-            "
+          <MotionDiv
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
-            Resume
-          </Link>
+            <Link
+              href="/MinjeeSon_Resume.pdf"
+              target="_blank"
+              className="inline-block px-2 py-1 border rounded border-dark text-dark text-sm transition-all hover:font-semibold hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[2px_2px_0_0] hover:transition-all delay-100
+            "
+            >
+              Resume
+            </Link>
+          </MotionDiv>
         </div>
+        {/* mobile burger menu */}
+        <button className="w-6 h-5 flex flex-col justify-between items-center mdl:hidden overflow-hidden group">
+          <span className="w-full h-0.5 bg-dark transform group-hover:translate-x-3 transition-all ease-in-out duration-500"></span>
+          <span className="w-full h-0.5 bg-dark transform group-hover:translate-x-1 transition-all ease-in-out duration-100"></span>
+          <span className="w-full h-0.5 bg-dark transform group-hover:translate-x-2 transition-all ease-in-out duration-300"></span>
+        </button>
       </nav>
     </header>
   );
