@@ -36,7 +36,7 @@ export default function Header() {
             <Link
               href="/MinjeeSon_Resume.pdf"
               target="_blank"
-              className="inline-block px-2 py-1 border rounded border-dark text-dark text-sm transition-all hover:font-semibold hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[2px_2px_0_0] hover:transition-all delay-100
+              className="inline-block px-2 py-1 border rounded border-dark text-dark text-sm transition-all hover:font-semibold hover:translate-x-[-2px] hover:-translate-y-0.5 hover:shadow-[2px_2px_0_0] hover:transition-all delay-100
             "
             >
               Resume
