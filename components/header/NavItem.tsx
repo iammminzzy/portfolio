@@ -35,7 +35,7 @@ const NavItem = ({ id, hash, children }: NavItemProps) => {
         href={hash}
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
-        className="text-dark font-normal hover:font-semibold transform transition-all"
+        className="text-dark font-medium"
       >
         {children}
       </Link>

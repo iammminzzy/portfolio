@@ -33,7 +33,7 @@ module.exports = {
       colors: {
         sectionColor: "rgb(255, 251, 235)",
         light: "#ffffff",
-        dark: "rgb(12 10 9)",
+        dark: "#191919",
         pointYellow: "rgb(251 191 36)",
       },
     },
