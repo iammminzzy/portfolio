@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { MotionDiv, slideUpVariants } from "@/components/common/Motion";
+import { MotionDiv, slideUpVariants } from "@/components/common";
 import { highlightIcon, profileImg } from "@/images";
 
 const About = () => {

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 
-import { slideDownVariants } from "@/components/common/Motion";
+import { slideDownVariants } from "@/components/common";
 
 interface NavItemProps {
   id: number;

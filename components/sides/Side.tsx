@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-import { fadeInVariants, MotionDiv } from "@/components/common/Motion";
+import { fadeInVariants, MotionDiv } from "@/components/common";
 
 type Orientation = "left" | "right";
 interface SideProps {
