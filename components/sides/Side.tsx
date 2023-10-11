@@ -3,6 +3,8 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
+import { fadeInVariants, MotionDiv } from "@/components/common/Motion";
+
 type Orientation = "left" | "right";
 interface SideProps {
   children: ReactNode;
@@ -29,6 +31,15 @@ const StyledSide = styled.div<{ orientation: Orientation }>`
 `;
 
 const Side = ({ children, orientation }: SideProps) => {
-  return <StyledSide orientation={orientation}>{children}</StyledSide>;
+  return (
+    <StyledSide orientation={orientation}>
+      <MotionDiv
+        variants={fadeInVariants}
+        transition={{ delay: 3.5, duration: 1 }}
+      >
+        {children}
+      </MotionDiv>
+    </StyledSide>
+  );
 };
 export default Side;

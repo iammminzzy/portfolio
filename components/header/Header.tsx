@@ -6,7 +6,7 @@ import {
   MotionLink,
   slideDownVariants,
 } from "@/components/common/Motion";
-import { links } from "@/libs/data";
+import { sections } from "@/libs/data";
 
 import NavItem from "./NavItem";
 
@@ -26,7 +26,7 @@ export default function Header() {
         </MotionLink>
         <div className="mdl:flex items-center gap-7 hidden">
           <ul className="flex gap-7">
-            {links.map(({ id, name, hash }) => (
+            {sections.map(({ id, name, hash }) => (
               <NavItem key={id} id={id} hash={hash}>
                 {name}
               </NavItem>

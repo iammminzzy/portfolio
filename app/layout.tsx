@@ -2,7 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 
-import { Header } from "@/components";
+import { Email, Header, Social } from "@/components";
 
 import { clashDisplay, DMSans } from "./font";
 
@@ -21,6 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${clashDisplay.variable} ${DMSans.variable}`}>
         <Header />
+        <Social />
+        <Email />
         {children}
       </body>
     </html>

@@ -1,4 +1,4 @@
-export const links = [
+export const sections = [
   {
     id: 1,
     name: "About",
