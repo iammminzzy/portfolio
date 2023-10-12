@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col justify-center px-[10%] w-full max-w-contentContainer h-screen gap-5 mx-auto py-10 mdl:py-24 lgl:gap-8 mdl:px-10 xl:px-4"
+      className="flex flex-col justify-center px-[10%] w-full max-w-contentContainer min-h-screen gap-5 mx-auto py-10 mdl:py-24 lgl:gap-8 mdl:px-10 xl:px-4"
     >
       <div className="inline-flex justify-center gap-4 font-titleFont font-semibold text-[125px] text-center">
         <MotionDiv

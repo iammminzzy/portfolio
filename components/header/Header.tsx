@@ -6,7 +6,7 @@ import {
   MotionLink,
   slideDownVariants,
 } from "@/components/common";
-import { sections } from "@/libs/data";
+import { sections } from "@/static/data";
 
 import NavItem from "./NavItem";
 

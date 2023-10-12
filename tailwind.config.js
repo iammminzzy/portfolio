@@ -28,7 +28,7 @@ module.exports = {
         bodyFont: ["var(--font-DM-Sans)", "sans-serif"],
       },
       boxShadow: {
-        HeaderShadow: "0 0px 35px -9px rgba(2,12,20,0.2)",
+        headerShadow: "0 0px 35px -9px rgba(2,12,20,0.2)",
       },
       colors: {
         sectionColor: "rgb(255, 251, 235)",

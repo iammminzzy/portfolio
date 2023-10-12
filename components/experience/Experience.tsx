@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import { SectionTitle } from "@/components/common";
-import { experiences } from "@/libs/data";
+import { experiences } from "@/static/data";
 
 import { ExperienceContent, ExperienceList } from "./components";
 
@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex flex-col justify-start px-[10%] mx-auto w-full py-28 mdl:max-w-containerXs h-screen mdl:px-10 xl:px-4"
+      className="flex flex-col justify-start mx-auto w-full py-28 mdl:max-w-containerXs min-h-screen"
     >
       <SectionTitle title="Work Experience" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
