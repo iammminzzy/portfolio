@@ -1,3 +1,9 @@
+import {
+  ProjectImg_Admin,
+  ProjectImg_Beople,
+  ProjectImg_Knewnew,
+} from "@/public/images";
+
 export const sections = [
   {
     id: 1,
@@ -60,6 +66,52 @@ export const experiences = [
     description: [
       "Based on quick problem-solving abilities and strong collaborative skills, achieved 3 consecutive years of top performance evaluations and took on managerial responsibilities ahead of schedule.",
       "Effectively communicated with international passengers by utilizing Japanese and English language skills.",
+    ],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    image: ProjectImg_Admin,
+    name: "Notiee",
+    description:
+      "Back-office application used by the tax team to assist clients with their tax filings. In contrast to the previous manual data entry process, We introduced AI to automate the extraction of data from file records. This program presents the data and allows for corrections to be made if something's wrong. This transformation greatly improved efficiency and reduced the potential for errors.",
+    skills: ["React", "Typescript", "Styled-Components", "Tanstack-Query"],
+    links: [
+      {
+        Github: "",
+        site: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    image: ProjectImg_Beople,
+    name: "Beople",
+    description:
+      "Beople provides a 1:1 mentoring service that matches by finding mentors in areas of interest.",
+    skills: ["React", "NextJS", "TailwindCSS", "Redux", "Figma"],
+    links: [
+      {
+        Github: "",
+        site: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    image: ProjectImg_Knewnew,
+    name: "Knewnew Desktop ver.",
+    description:
+      "Implemented a desktop version view for the mobile application.",
+    skills: ["React", "Typescript", "Styled-Components", "Tanstack-Query"],
+    links: [
+      {
+        Github: "",
+        Youtube: "",
+        site: "",
+      },
     ],
   },
 ];

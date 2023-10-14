@@ -8,7 +8,7 @@ import {
 } from "react-icons/fi";
 import { IconBaseProps } from "react-icons/lib";
 
-type IconType =
+export type IconType =
   | "Github"
   | "Instagram"
   | "Linkedin"
