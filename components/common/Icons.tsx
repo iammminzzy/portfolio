@@ -17,7 +17,7 @@ export type IconType =
   | "External";
 
 interface IconProps extends IconBaseProps {
-  name: IconType;
+  name: IconType | string;
 }
 
 export const Icon = ({ name, ...props }: IconProps) => {

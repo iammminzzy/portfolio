@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Icon, IconType, SectionTitle } from "@/components/common";
+import { Icon, SectionTitle } from "@/components/common";
 import { projects } from "@/static/data";
 
 const Projects = () => {
@@ -27,6 +27,8 @@ const Projects = () => {
                 <div className="w-full xl:w-1/2 h-auto relative group">
                   <Image
                     src={image}
+                    width={500}
+                    height={300}
                     alt={`main image of project ${id}`}
                     className="w-full h-full object-contain"
                   />
@@ -38,7 +40,7 @@ const Projects = () => {
                       : "xl:-ml-16 items-end text-right"
                   }`}
                 >
-                  <p className="font-titleFont text-pointYellow text-sm tracking-wide">
+                  <p className="font-titleFont text-pointYellow font-medium text-sm tracking-wide">
                     Project {i + 1}
                   </p>
                   <h3 className="xl:mb-5 mb-2 text-2xl font-bold">{name}</h3>
@@ -50,21 +52,23 @@ const Projects = () => {
                     {description}
                   </p>
                   <ul className="flex gap-2 md:gap-5 justify-between xl:my-5 my-2 text-xs md:text-sm font-titleFont tracking-wide">
-                    {skills.map((skill, i) => (
-                      <li key={i}>{skill}</li>
+                    {skills.map((skill) => (
+                      <li key={skill}>{skill}</li>
                     ))}
                   </ul>
                   <div className="flex gap-5">
-                    {links.map((link, i) => (
-                      <Link
-                        key={i}
-                        href="/"
-                        target="_blank"
-                        className="hover:text-pointYellow text-2xl duration-300"
-                      >
-                        <Icon name={link as unknown as IconType} />
-                      </Link>
-                    ))}
+                    {Object.keys(links).map((key) => {
+                      return (
+                        <Link
+                          key={key}
+                          href={links[key]}
+                          target="_blank"
+                          className="hover:text-pointYellow text-2xl duration-300"
+                        >
+                          <Icon name={key} />
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

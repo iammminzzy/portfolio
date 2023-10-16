@@ -1,7 +1,11 @@
+import { StaticImageData } from "next/image";
+
 import {
   ProjectImg_Admin,
   ProjectImg_Beople,
   ProjectImg_Knewnew,
+  ProjectImg_Sesac,
+  ProjectImg_Turtlehome,
 } from "@/public/images";
 
 export const sections = [
@@ -70,7 +74,16 @@ export const experiences = [
   },
 ];
 
-export const projects = [
+type Project = {
+  id: number;
+  image: StaticImageData;
+  name: string;
+  description: string;
+  skills: string[];
+  links: { [key: string]: string };
+};
+
+export const projects: Project[] = [
   {
     id: 1,
     image: ProjectImg_Admin,
@@ -78,12 +91,9 @@ export const projects = [
     description:
       "Back-office application used by the tax team to assist clients with their tax filings. In contrast to the previous manual data entry process, We introduced AI to automate the extraction of data from file records. This program presents the data and allows for corrections to be made if something's wrong. This transformation greatly improved efficiency and reduced the potential for errors.",
     skills: ["React", "Typescript", "Styled-Components", "Tanstack-Query"],
-    links: [
-      {
-        Github: "",
-        site: "",
-      },
-    ],
+    links: {
+      site: "",
+    },
   },
   {
     id: 2,
@@ -92,12 +102,9 @@ export const projects = [
     description:
       "Beople provides a 1:1 mentoring service that matches by finding mentors in areas of interest.",
     skills: ["React", "NextJS", "TailwindCSS", "Redux", "Figma"],
-    links: [
-      {
-        Github: "",
-        site: "",
-      },
-    ],
+    links: {
+      site: "https://beople.vercel.app/",
+    },
   },
   {
     id: 3,
@@ -105,14 +112,36 @@ export const projects = [
     name: "Knewnew Desktop ver.",
     description:
       "Implemented a desktop version view for the mobile application.",
-    skills: ["React", "Typescript", "Styled-Components", "Tanstack-Query"],
-    links: [
-      {
-        Github: "",
-        Youtube: "",
-        site: "",
-      },
-    ],
+    skills: ["React", "Typescript", "Redux", "Tanstack-Query"],
+    links: {
+      Github: "https://github.com/iammminzzy/3rd-project-knewnew.git",
+      Youtube: "https://youtu.be/T7NdgYqNdog",
+      site: "https://knewnew.co.kr/",
+    },
+  },
+  {
+    id: 4,
+    image: ProjectImg_Turtlehome,
+    name: "Turtle Home",
+    description:
+      "An online shopping site selling home living decor products including bedding, clothing, kitchenware, and bathroom accessories. Characterised by tidy and emotional design, and intuitive categorisation.",
+    skills: ["React", "Javascript", "SASS"],
+    links: {
+      Github: "https://github.com/iammminzzy/1st-project-TURTLE-HOME.git",
+      Youtube: "https://youtu.be/oteSmD-VPqg",
+    },
+  },
+  {
+    id: 5,
+    image: ProjectImg_Sesac,
+    name: "Sesac: Sprout",
+    description:
+      "A community site sharing destinations related to plants and eco-friendly places. Utilised various libraries and open APIs such as Google Maps, Kakao Maps, Slick, and Swiper.",
+    skills: ["React", "Javascript", "Styled-Components"],
+    links: {
+      Github: "https://github.com/iammminzzy/2nd-project-SeSac.git",
+      Youtube: "https://youtu.be/ayGvLwikPxk",
+    },
   },
 ];
 
