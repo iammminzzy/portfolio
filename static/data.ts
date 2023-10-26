@@ -149,7 +149,7 @@ export const email = "minjeeson.dev@gmail.com";
 
 export const socialMedia = [
   {
-    name: "GitHub",
+    name: "Github",
     url: "https://github.com/iammminzzy",
   },
   {

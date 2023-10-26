@@ -6,7 +6,7 @@ import { email } from "@/static/data";
 const Email = () => {
   return (
     <Side orientation="right">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 text-dark">
         <p className="text-sm tracking-wider [writing-mode:vertical-lr] hover:text-pointYellow hover:-translate-y-1 transition-all duration-300 delay-75">
           <Link href={`mailto: ${email}`}>{email}</Link>
         </p>

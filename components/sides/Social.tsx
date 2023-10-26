@@ -8,7 +8,7 @@ import { Icon } from "../common/Icons";
 const Social = () => {
   return (
     <Side orientation="left">
-      <ul className="flex flex-col items-center gap-2">
+      <ul className="flex flex-col items-center gap-2 text-dark">
         {socialMedia.map(({ name, url }) => (
           <li
             key={name}

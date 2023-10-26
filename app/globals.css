@@ -133,7 +133,6 @@ button {
 input,
 textarea,
 select {
-  border: none;
   outline: none;
   background: none;
   margin: 0;
