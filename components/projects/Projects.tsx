@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Icon, SectionTitle } from "@/components/common";
-import { projects } from "@/static/data";
+import { projects } from "@/libs/data";
 
 const Projects = () => {
   return (

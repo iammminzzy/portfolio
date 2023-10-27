@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import Side from "@/components/sides/Side";
-import { socialMedia } from "@/static/data";
+import { socialMedia } from "@/libs/data";
 
 import { Icon } from "../common/Icons";
 

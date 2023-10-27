@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import Side from "@/components/sides/Side";
-import { email } from "@/static/data";
+import { email } from "@/libs/data";
 
 const Email = () => {
   return (

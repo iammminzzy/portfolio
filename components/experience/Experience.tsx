@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import { SectionTitle } from "@/components/common";
-import { experiences } from "@/static/data";
+import { experiences } from "@/libs/data";
 
 import { ExperienceContent, ExperienceList } from "./components";
 
