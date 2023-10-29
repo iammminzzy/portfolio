@@ -1,14 +1,12 @@
 interface SectionTitleProps {
-  titleNo?: string;
   title: string;
 }
 
-const SectionTitle = ({ titleNo, title }: SectionTitleProps) => {
+const SectionTitle = ({ title }: SectionTitleProps) => {
   return (
-    <h2 className="font-titleFont text-3xl font-medium flex items-center">
-      <span className="text-base md:text-lg">{titleNo}</span>
+    <h2 className="font-titleFont text-xl sml:text-2xl md:text-3xl font-medium flex items-center">
       {title}
-      <span className="hidden md:inline-flex md:w-full h-0.5 bg-pointYellow ml-6" />
+      <span className="w-full h-0.5 bg-pointYellow ml-6" />
     </h2>
   );
 };

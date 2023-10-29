@@ -90,7 +90,7 @@ export const projects: Project[] = [
     name: "Notiee",
     description:
       "Back-office application used by the tax team to assist clients with their tax filings. In contrast to the previous manual data entry process, We introduced AI to automate the extraction of data from file records. This program presents the data and allows for corrections to be made if something's wrong. This transformation greatly improved efficiency and reduced the potential for errors.",
-    skills: ["React", "Typescript", "Styled-Components", "Tanstack-Query"],
+    skills: ["React", "Typescript", "Tanstack-Query", "Styled-Components"],
     links: {
       site: "",
     },
@@ -109,9 +109,9 @@ export const projects: Project[] = [
   {
     id: 3,
     image: ProjectImg_Knewnew,
-    name: "Knewnew Desktop ver.",
+    name: "Knewnew",
     description:
-      "Implemented a desktop version view for the mobile application.",
+      "A data-driven food portal platform for easy discovery of desired food items through user-to-user recommendations.",
     skills: ["React", "Typescript", "Redux", "Tanstack-Query"],
     links: {
       Github: "https://github.com/iammminzzy/3rd-project-knewnew.git",

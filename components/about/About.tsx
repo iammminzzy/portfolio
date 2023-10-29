@@ -7,9 +7,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col justify-center px-[10%] w-full max-w-contentContainer min-h-screen gap-5 mx-auto py-10 mdl:py-24 lgl:gap-8 mdl:px-10 xl:px-4"
+      className="flex flex-col justify-center w-full max-w-contentContainer min-h-screen gap-8 mx-auto py-20 md:py-28"
     >
-      <div className="inline-flex justify-center gap-4 font-titleFont font-semibold text-[125px] text-center">
+      <div className="flex w-full mdl:flex-row flex-col items-center justify-center gap-4 font-titleFont font-semibold text-bigHeading text-center leading-none">
         <MotionDiv
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -34,16 +34,15 @@ const About = () => {
           <Image
             src={highlightIcon}
             alt="Icon to highlight my image in the About section"
-            width={50}
-            height={50}
-            className="absolute left-[-1.75rem] top-0 inline"
+            width={40}
+            height={40}
+            className="absolute -left-5 -top-4 mdl:-left-7 mdl:-top-6 mdl:w-[50px] mdl:h-[50px]"
           />
           <Image
             src={profileImg}
             alt="My image in About section"
-            width={120}
-            height={120}
-            className="inline"
+            width={150}
+            height={150}
           />
         </MotionDiv>
         <MotionDiv variants={slideUpVariants} transition={{ delay: 2 }}>
@@ -54,7 +53,7 @@ const About = () => {
         variants={slideUpVariants}
         transition={{ delay: 3, duration: 1 }}
       >
-        <p className="font-bodyFont text-2xl text-center">
+        <p className="font-bodyFont text-base mdl:text-lg lgl:text-xl text-center">
           Professional{" "}
           <strong>
             <u>Front End Developer</u>

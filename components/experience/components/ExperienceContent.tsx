@@ -23,16 +23,21 @@ const ExperienceContent = ({
       transition={{ delay: 0.1 }}
       className="w-full"
     >
-      <h3 className="flex gap-1 font-medium text-xl mb-1">
+      <h3 className="flex items-center gap-1 font-medium text-base sml:text-xl">
         {title}{" "}
-        <span className="text-lg text-dark text-opacity-50">@{company}</span>
+        <span className="text-sm sml:text-lg text-dark text-opacity-50">
+          @{company}
+        </span>
       </h3>
-      <p>
+      <p className="text-xs">
         {startDate} - {endDate}
       </p>
       <ul className="flex flex-col gap-3 mt-6">
         {description.map((desc, i) => (
-          <li key={`${i}+${desc}`} className="text-base text-dark flex gap-2">
+          <li
+            key={`${i}+${desc}`}
+            className="text-sm sml:text-base text-dark flex gap-2"
+          >
             <span className="text-pointYellow mt-1">
               <FiArrowRight />
             </span>

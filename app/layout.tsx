@@ -3,8 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import { Email, Header, Social } from "@/components";
-
-import { clashDisplay, DMSans } from "./font";
+import { clashDisplay, DMSans } from "@/libs/font";
 
 export const metadata: Metadata = {
   title: "Minjee Son",

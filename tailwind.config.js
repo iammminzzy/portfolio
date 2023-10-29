@@ -27,6 +27,9 @@ module.exports = {
         titleFont: ["var(--font-clash-display)", "sans-serif"],
         bodyFont: ["var(--font-DM-Sans)", "sans-serif"],
       },
+      fontSize: {
+        bigHeading: "clamp(55px,9vw,125px)",
+      },
       boxShadow: {
         headerShadow: "0 0px 35px -9px rgba(2,12,20,0.2)",
       },

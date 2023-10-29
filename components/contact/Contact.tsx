@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-start px-[10%] mx-auto w-full min-h-screen py-24"
+      className="flex flex-col justify-start mx-auto w-full mdl:min-h-screen py-20 md:py-28"
     >
       <SectionTitle title="Contact" />
       <div className="flex flex-col items-center pt-20">

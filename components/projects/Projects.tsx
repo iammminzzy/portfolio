@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-start px-[10%] mx-auto w-full max-w-contentContainer min-h-screen lgl:px-20 py-24"
+      className="flex flex-col justify-start mx-auto w-full max-w-contentContainer mdl:min-h-screen py-20 md:py-28"
     >
       <SectionTitle title="Projects" />
       <div className="w-full flex flex-col gap-20 mt-8">
@@ -34,36 +34,38 @@ const Projects = () => {
                   />
                 </div>
                 <div
-                  className={`w-full xl:w-1/2 flex flex-col xl:gap-0 gap-2 lgl:justify-center z-10 ${
+                  className={`w-full xl:w-1/2 flex flex-col xl:gap-0 md:gap-4 gap-3 lgl:justify-center z-10 ${
                     even
                       ? "items-start text-left"
                       : "xl:-ml-16 items-end text-right"
                   }`}
                 >
-                  <p className="font-titleFont text-pointYellow font-medium text-sm tracking-wide">
+                  <p className="font-titleFont text-pointYellow font-medium text-xs md:text-sm tracking-wide -mb-3 xl:mb-0">
                     Project {i + 1}
                   </p>
-                  <h3 className="xl:mb-5 mb-2 text-2xl font-bold">{name}</h3>
+                  <h3 className="xl:mb-5 text-lg md:text-2xl font-bold">
+                    {name}
+                  </h3>
                   <p
-                    className={`bg-pointYellow bg-opacity-20 shadow-md text-sm md:text-base p-5 md:p-6 rounded-md ${
+                    className={`bg-pointYellow bg-opacity-20 shadow-md text-xs md:text-base p-5 md:p-6 rounded-md ${
                       even ? "xl:-mr-16 " : ""
                     }`}
                   >
                     {description}
                   </p>
-                  <ul className="flex gap-2 md:gap-5 justify-between xl:my-5 my-2 text-xs md:text-sm font-titleFont tracking-wide">
+                  <ul className="flex flex-wrap gap-2 md:gap-5 sml:my-0 xl:my-5 text-xs md:text-sm font-titleFont tracking-wide">
                     {skills.map((skill) => (
                       <li key={skill}>{skill}</li>
                     ))}
                   </ul>
-                  <div className="flex gap-5">
+                  <div className="flex gap-3 md:gap-5">
                     {Object.keys(links).map((key) => {
                       return (
                         <Link
                           key={key}
                           href={links[key]}
                           target="_blank"
-                          className="hover:text-pointYellow text-2xl duration-300"
+                          className="hover:text-pointYellow text-lg md:text-2xl duration-300"
                         >
                           <Icon name={key} />
                         </Link>

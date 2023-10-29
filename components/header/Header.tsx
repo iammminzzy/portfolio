@@ -12,7 +12,7 @@ import NavItem from "./NavItem";
 
 export default function Header() {
   return (
-    <header className="flex w-full h-20 lg:h-[11vh] fixed top-0 z-50 px-[40px] bg-sectionColor font-titleFont">
+    <header className="flex w-full h-20 lg:h-[11vh] fixed top-0 z-50 px-6 md:px-10 bg-sectionColor font-titleFont">
       <nav className="max-w-container mx-auto flex w-full h-full py-1 justify-between items-center">
         <MotionLink
           href="/"
