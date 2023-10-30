@@ -1,7 +1,4 @@
-"use client";
-
 import { ReactNode } from "react";
-import styled from "styled-components";
 
 import { fadeInVariants, MotionDiv } from "@/components/common";
 
@@ -12,34 +9,22 @@ interface SideProps {
   isHome?: boolean;
 }
 
-const StyledSide = styled.div<{ orientation: Orientation }>`
-  width: 40px;
-  position: fixed;
-  bottom: 0;
-  left: ${({ orientation }) => (orientation === "left" ? "40px" : "auto")};
-  right: ${({ orientation }) => (orientation === "left" ? "auto" : "40px")};
-  z-index: 10;
-
-  @media (max-width: 1080px) {
-    left: ${({ orientation }) => (orientation === "left" ? "20px" : "auto")};
-    right: ${({ orientation }) => (orientation === "left" ? "auto" : "20px")};
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
 const Side = ({ children, orientation }: SideProps) => {
   return (
-    <StyledSide orientation={orientation}>
+    <div
+      className={`${
+        orientation === "left"
+          ? "right-auto left-5 lgl:left-10"
+          : "left-auto right-5 lgl:right-10"
+      } w-10 fixed bottom-0 z-10 hidden mdl:block`}
+    >
       <MotionDiv
         variants={fadeInVariants}
         transition={{ delay: 3.5, duration: 1 }}
       >
         {children}
       </MotionDiv>
-    </StyledSide>
+    </div>
   );
 };
 export default Side;

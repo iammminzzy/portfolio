@@ -34,7 +34,7 @@ module.exports = {
         headerShadow: "0 0px 35px -9px rgba(2,12,20,0.2)",
       },
       colors: {
-        sectionColor: "rgb(255, 251, 235)",
+        sectionColor: "#fffffe",
         light: "#ffffff",
         dark: "#191919",
         pointYellow: "rgb(251 191 36)",

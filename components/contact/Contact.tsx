@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-start mx-auto w-full mdl:min-h-screen py-20 md:py-28"
+      className="flex flex-col justify-start mx-auto w-full mdl:min-h-screen py-[90px] md:py-28"
     >
       <SectionTitle title="Contact" />
       <div className="flex flex-col items-center pt-20">
@@ -22,7 +22,7 @@ const Contact = () => {
           action={sendEmail}
         >
           <input
-            className="w-full h-14 px-4 rounded-lg bg-white border border-dark/10 transition-all "
+            className="w-full h-14 px-4 rounded-lg bg-white border border-dark/10 transition-all focus:outline focus:outline-1 focus:outline-dark"
             name="senderEmail"
             type="email"
             required
@@ -30,7 +30,7 @@ const Contact = () => {
             placeholder="Your email"
           />
           <textarea
-            className="w-full h-52 my-3 rounded-lg bg-white border border-dark/10 p-4 transition-all "
+            className="w-full h-52 my-3 rounded-lg bg-white border border-dark/10 p-4 transition-all focus:outline focus:outline-1 focus:outline-dark"
             name="message"
             placeholder="Your message"
             required

@@ -2,17 +2,17 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { AnchorHTMLAttributes, useState } from "react";
 
 import { slideDownVariants } from "@/components/common";
 
-interface NavItemProps {
+interface NavItemProps
+  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "id"> {
   id: number;
   hash: string;
-  children: ReactNode;
 }
 
-const NavItem = ({ id, hash, children }: NavItemProps) => {
+const NavItem = ({ id, hash, children, ...props }: NavItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -36,13 +36,14 @@ const NavItem = ({ id, hash, children }: NavItemProps) => {
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
         className="text-dark font-medium"
+        {...props}
       >
         {children}
       </Link>
       <div
         className={`${
           isHovered ? "w-full" : "w-0"
-        } absolute mt-0.5 h-0.5 bg-dark transform ease-in-out duration-300  delay-100`}
+        } absolute mt-0.5 h-0.5 bg-dark transform ease-in-out duration-300 delay-100`}
       ></div>
     </motion.li>
   );

@@ -13,11 +13,11 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex flex-col justify-start mx-auto w-full py-20 md:py-28 mdl:max-w-containerXs mdl:min-h-screen"
+      className="flex flex-col justify-start mx-auto w-full py-[90px] md:py-28 mdl:max-w-containerXs mdl:min-h-screen"
     >
       <SectionTitle title="Work Experience" />
-      <div className="w-full mt-10 flex flex-col md:flex-row gap-8 md:gap-16">
-        <ul className="flex overflow-x-scroll md:overflow-x-visible md:flex-col md:w-fit">
+      <div className="w-full mt-10 flex flex-col mdl:flex-row gap-8 mdl:gap-16">
+        <ul className="flex overflow-x-scroll mdl:overflow-x-visible mdl:flex-col mdl:w-fit">
           {experiences.map(({ id, company }) => (
             <ExperienceList
               key={id}

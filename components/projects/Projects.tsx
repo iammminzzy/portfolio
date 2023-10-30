@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-start mx-auto w-full max-w-contentContainer mdl:min-h-screen py-20 md:py-28"
+      className="flex flex-col justify-start mx-auto w-full max-w-contentContainer mdl:min-h-screen py-[90px] md:py-28"
     >
       <SectionTitle title="Projects" />
       <div className="w-full flex flex-col gap-20 mt-8">
@@ -21,10 +21,10 @@ const Projects = () => {
             >
               <div
                 className={`flex flex-col ${
-                  even ? "xl:flex-row-reverse" : "xl:flex-row"
+                  even ? "mdl:flex-row-reverse" : "mdl:flex-row"
                 } gap-6`}
               >
-                <div className="w-full xl:w-1/2 h-auto relative group">
+                <div className="w-full mdl:w-1/2 h-auto relative group">
                   <Image
                     src={image}
                     width={500}
@@ -34,10 +34,10 @@ const Projects = () => {
                   />
                 </div>
                 <div
-                  className={`w-full xl:w-1/2 flex flex-col xl:gap-0 md:gap-4 gap-3 lgl:justify-center z-10 ${
+                  className={`w-full mdl:w-1/2 flex flex-col xl:gap-0 md:gap-4 gap-3 mdl:justify-center z-10 ${
                     even
                       ? "items-start text-left"
-                      : "xl:-ml-16 items-end text-right"
+                      : "mdl:-ml-16 items-end text-right"
                   }`}
                 >
                   <p className="font-titleFont text-pointYellow font-medium text-xs md:text-sm tracking-wide -mb-3 xl:mb-0">
@@ -48,7 +48,7 @@ const Projects = () => {
                   </h3>
                   <p
                     className={`bg-pointYellow bg-opacity-20 shadow-md text-xs md:text-base p-5 md:p-6 rounded-md ${
-                      even ? "xl:-mr-16 " : ""
+                      even ? "mdl:-mr-16 " : ""
                     }`}
                   >
                     {description}

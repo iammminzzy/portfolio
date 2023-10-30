@@ -55,7 +55,7 @@ const About = () => {
       >
         <p className="font-bodyFont text-base mdl:text-lg lgl:text-xl text-center">
           Professional{" "}
-          <strong>
+          <strong className="text-pointYellow">
             <u>Front End Developer</u>
           </strong>{" "}
           and a lifelong learner who loves challenges.
