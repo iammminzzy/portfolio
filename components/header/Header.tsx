@@ -15,7 +15,6 @@ import NavItem from "./NavItem";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
 
   const handleToggle = () => {
     setIsMenuOpen((prev) => !prev);

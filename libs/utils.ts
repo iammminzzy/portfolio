@@ -1,7 +1,9 @@
-export const validateString = (value: unknown, maxLenghth?: number) => {
-  if (!maxLenghth) return;
-
-  if (!value || typeof value !== "string" || value.length > maxLenghth) {
+export const validateString = (value: unknown, maxLength?: number) => {
+  if (
+    !value ||
+    typeof value !== "string" ||
+    (maxLength !== undefined && value.length > maxLength)
+  ) {
     return false;
   }
   return true;

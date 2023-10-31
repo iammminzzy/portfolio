@@ -3,7 +3,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 const SendBtn = () => {
   const { pending } = useFormStatus();
-  console.log({ pending });
+
   return (
     <button
       type="submit"
