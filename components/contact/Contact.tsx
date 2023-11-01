@@ -2,8 +2,7 @@
 
 import { SectionTitle } from "@/components/common";
 
-import { SendBtn } from "./components";
-import { sendEmail } from "./components/SendEmail";
+import { SendBtn, sendEmail } from "./components";
 
 const Contact = () => {
   return (
@@ -19,7 +18,15 @@ const Contact = () => {
         </h3>
         <form
           className="w-full max-w-xl mt-10 mx-3 flex flex-col items-center"
-          action={sendEmail}
+          action={async (formData: FormData) => {
+            const { error } = await sendEmail(formData);
+
+            if (error) {
+              alert(`Something's wrong with ${error}. Try again!`);
+            }
+
+            alert("Your email has been sent!");
+          }}
         >
           <input
             className="w-full h-14 px-4 rounded-lg bg-white border border-dark/10 transition-all focus:outline focus:outline-1 focus:outline-dark"

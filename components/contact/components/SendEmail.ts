@@ -1,6 +1,5 @@
 "use server";
 
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 import { validateString } from "@/libs/utils";
@@ -24,18 +23,21 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
-    const data = await resend.emails.send({
-      from: "onboarding@resend.dev",
+    data = await resend.emails.send({
+      from: "Portfolio Contact From <onboarding@resend.dev>",
       to: myMail,
       reply_to: senderEmail as string,
       subject: "Mail from contact form",
       text: message as string,
     });
-    console.log(data);
-
-    return NextResponse.json(data);
   } catch (error: unknown) {
-    return NextResponse.json({ error });
+    if (error instanceof Error) {
+      return {
+        error: error.message,
+      };
+    }
   }
+  return { data };
 };
