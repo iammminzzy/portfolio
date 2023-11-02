@@ -1,9 +1,7 @@
 import Link from "next/link";
 
-import Side from "@/components/sides/Side";
+import { Icon, Side } from "@/components";
 import { socialMedia } from "@/libs/data";
-
-import { Icon } from "../common/Icons";
 
 const Social = () => {
   return (

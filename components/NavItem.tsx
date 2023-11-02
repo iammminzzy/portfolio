@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AnchorHTMLAttributes, useState } from "react";
 
-import { slideDownVariants } from "@/components/common";
+import { slideDownVariants } from "@/components";
 
 interface NavItemProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "id"> {

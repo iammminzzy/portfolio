@@ -1,8 +1,9 @@
 "use client";
 
-import { SectionTitle } from "@/components/common";
+import { redirect } from "next/navigation";
 
-import { SendBtn, sendEmail } from "./components";
+import { sendEmail } from "@/actions/SendEmail";
+import { SectionTitle, SendBtn } from "@/components";
 
 const Contact = () => {
   return (
@@ -26,6 +27,7 @@ const Contact = () => {
             }
 
             alert("Your email has been sent!");
+            redirect("/");
           }}
         >
           <input

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Side from "@/components/sides/Side";
+import { Side } from "@/components";
 import { email } from "@/libs/data";
 
 const Email = () => {

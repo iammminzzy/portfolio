@@ -1,19 +1,8 @@
-import highlightIcon from "./highlight.svg";
-import profileImg from "./profile.png";
-import ProjectImg_Admin from "./projects/Admin.png";
-import ProjectImg_Beople from "./projects/beople.jpg";
-import ProjectImg_Knewnew from "./projects/knewnew.gif";
-import ProjectImg_Notiee from "./projects/Notiee.png";
-import ProjectImg_Sesac from "./projects/sesac.gif";
-import ProjectImg_Turtlehome from "./projects/turtlehome.gif";
-
-export {
-  highlightIcon,
-  profileImg,
-  ProjectImg_Admin,
-  ProjectImg_Beople,
-  ProjectImg_Knewnew,
-  ProjectImg_Notiee,
-  ProjectImg_Sesac,
-  ProjectImg_Turtlehome,
-};
+export { default as highlightIcon } from "./highlight.svg";
+export { default as profileImg } from "./profile.png";
+export { default as ProjectImg_Admin } from "./projects/Admin.png";
+export { default as ProjectImg_Beople } from "./projects/beople.jpg";
+export { default as ProjectImg_Knewnew } from "./projects/knewnew.gif";
+export { default as ProjectImg_Notiee } from "./projects/Notiee.png";
+export { default as ProjectImg_Sesac } from "./projects/sesac.gif";
+export { default as ProjectImg_Turtlehome } from "./projects/turtlehome.gif";

@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import { MotionDiv, slideUpVariants } from "@/components/common";
+import { MotionDiv, slideUpVariants } from "@/components";
 import { highlightIcon, profileImg } from "@/images";
 
-const About = () => {
+const Main = () => {
   return (
     <section
-      id="about"
+      id="/"
       className="flex flex-col justify-center w-full max-w-contentContainer min-h-screen gap-8 mx-auto py-20 md:py-28"
     >
       <div className="flex w-full mdl:flex-row flex-col items-center justify-center gap-4 font-titleFont font-semibold text-bigHeading text-center leading-none">
@@ -33,14 +33,14 @@ const About = () => {
         >
           <Image
             src={highlightIcon}
-            alt="Icon to highlight my image in the About section"
+            alt="Icon to highlight my image in the Main section"
             width={40}
             height={40}
             className="absolute -left-5 -top-4 mdl:-left-7 mdl:-top-6 mdl:w-[50px] mdl:h-[50px]"
           />
           <Image
             src={profileImg}
-            alt="My image in About section"
+            alt="My image in Main section"
             width={150}
             height={150}
           />
@@ -68,4 +68,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Main;

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { fadeInVariants, MotionDiv } from "@/components/common";
+import { fadeInVariants, MotionDiv } from "@/components";
 
 type Orientation = "left" | "right";
 interface SideProps {

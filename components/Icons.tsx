@@ -20,7 +20,7 @@ interface IconProps extends IconBaseProps {
   name: IconType | string;
 }
 
-export const Icon = ({ name, ...props }: IconProps) => {
+const Icon = ({ name, ...props }: IconProps) => {
   switch (name) {
     case "Github": {
       return <FiGithub {...props} />;
@@ -43,3 +43,5 @@ export const Icon = ({ name, ...props }: IconProps) => {
     }
   }
 };
+
+export default Icon;

@@ -1,3 +1,5 @@
+"use client";
+
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
 

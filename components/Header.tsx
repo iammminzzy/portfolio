@@ -8,7 +8,7 @@ import {
   MotionDiv,
   MotionLink,
   slideDownVariants,
-} from "@/components/common";
+} from "@/components";
 import { sections } from "@/libs/data";
 
 import NavItem from "./NavItem";
@@ -35,11 +35,11 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed w-full font-titleFont z-50">
+    <header className="fixed top-0 w-full font-titleFont border-b-0 z-50">
       <div
         className={`${
           isMenuOpen ? "bg-pointYellow" : "bg-sectionColor"
-        } w-full h-20 top-0 px-6 md:px-10 transition-colors duration-500`}
+        } w-full h-20 px-6 md:px-10 transition-colors duration-500`}
       >
         <nav className="max-w-container mx-auto flex w-full h-full py-1 justify-between items-center">
           <MotionLink
@@ -86,7 +86,7 @@ export default function Header() {
       </div>
       <div
         className={`${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? "translate-y-0" : "-translate-y-full opacity-0"
         } mdl:hidden absolute w-full p-6 md:p-10 pt-2 md:pt-2 bg-pointYellow transition-all duration-300 -z-10`}
       >
         <ul className="flex flex-col gap-7 items-end text-lg">
