@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import { Email, Header, Social } from "@/components";
+import Footer from "@/components/Footer";
 import { clashDisplay, DMSans } from "@/libs/font";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Social />
         <Email />
         {children}
+        <Footer />
       </body>
     </html>
   );

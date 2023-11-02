@@ -77,7 +77,6 @@ select,
 a,
 li {
   outline: none;
-  /* remove tab area highlight: default is unset */
   -webkit-tap-highlight-color: transparent;
 }
 
