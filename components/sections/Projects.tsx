@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Icon, SectionTitle } from "@/components";
+import { Icon, MotionDiv, SectionTitle, slideUpVariants } from "@/components";
 import { projects } from "@/libs/data";
 
 const Projects = () => {
@@ -11,7 +11,11 @@ const Projects = () => {
       className="flex flex-col justify-start mx-auto w-full max-w-contentContainer mdl:min-h-screen py-[90px] md:py-28"
     >
       <SectionTitle title="Projects" />
-      <div className="w-full flex flex-col gap-20 mt-8">
+      <MotionDiv
+        variants={slideUpVariants}
+        transition={{ duration: 0.5 }}
+        className="w-full flex flex-col gap-20 mt-8"
+      >
         {projects.map(({ id, image, name, description, skills, links }, i) => {
           const even = i % 2 === 0;
           return (
@@ -77,7 +81,7 @@ const Projects = () => {
             </div>
           );
         })}
-      </div>
+      </MotionDiv>
     </section>
   );
 };

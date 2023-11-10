@@ -3,7 +3,12 @@
 import { redirect } from "next/navigation";
 
 import { sendEmail } from "@/actions/SendEmail";
-import { SectionTitle, SendBtn } from "@/components";
+import {
+  MotionDiv,
+  SectionTitle,
+  SendBtn,
+  slideUpVariants,
+} from "@/components";
 
 const Contact = () => {
   return (
@@ -12,7 +17,11 @@ const Contact = () => {
       className="flex flex-col justify-start mx-auto w-full mdl:min-h-screen py-[90px] md:py-28"
     >
       <SectionTitle title="Contact" />
-      <div className="flex flex-col items-center pt-20">
+      <MotionDiv
+        variants={slideUpVariants}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col items-center pt-20"
+      >
         <p className="font-medium">Looking to team up on a project?</p>
         <h3 className="mt-1 font-titleFont font-medium text-3xl">
           Drop me a line !
@@ -47,7 +56,7 @@ const Contact = () => {
           />
           <SendBtn />
         </form>
-      </div>
+      </MotionDiv>
     </section>
   );
 };
