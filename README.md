@@ -101,7 +101,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Contact
 
-Minjee Son - [@Resume](https://docs.google.com/document/d/1SMgSj-X7X7TDGyH40qL0rXLNKC1-ak__jUrIjksBUqs/edit?usp=sharing) - minjeeson.dev@gmail.com
+Minjee Son - [@CV](https://docs.google.com/document/d/1SMgSj-X7X7TDGyH40qL0rXLNKC1-ak__jUrIjksBUqs/edit?usp=sharing) - minjeeson.dev@gmail.com
 
 Project Link: [https://github.com/iammminzzy/portfolio](https://github.com/iammminzzy/portfolio)
 
