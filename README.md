@@ -10,8 +10,7 @@
 </a>
 
 <h3>Portfolio</h3>
-<p>🚧 wip 🚧</p>
-<a href="/"><strong>View Demo »</strong></a>
+<a href="https://minjee.vercel.app/"><strong>View »</strong></a>
 <br />
 <br />
 </div>
@@ -21,35 +20,26 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#built-with">Built With</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#installation">Installation</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## Built With
 
-[![Product Name Screen Shot][product-screenshot]](/)
-
-This is my portfolio ! ! !
-
-### Built With
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)&nbsp;
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white)&nbsp;
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=TailwindCSS&logoColor=white)&nbsp;
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white)&nbsp;
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white)&nbsp;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,43 +47,33 @@ This is my portfolio ! ! !
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a Resend API Key at [https://resend.com/api-keys](https://resend.com/api-keys)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/iammminzzy/portfolio.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Create & enter your API in `.env.local`
    ```js
-   const API_KEY = "ENTER YOUR API";
+   NEXT_PUBLIC_RESEND_API_KEY= = "ENTER YOUR API";
+   ```
+5. Change the "myMail" to your own email address in the `SendEmail.ts` action file
+   ```js
+   const myMail = "ENTER YOUR OWN EMAIL ADDRESS";
+   ```
+6. Start the development server
+   ```sh
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
+<!-- DEMO EXAMPLES -->
 
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+## Demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +81,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Contact
 
-Minjee Son - [@CV](https://docs.google.com/document/d/1SMgSj-X7X7TDGyH40qL0rXLNKC1-ak__jUrIjksBUqs/edit?usp=sharing) - minjeeson.dev@gmail.com
+Minjee Son - [@CV](https://docs.google.com/document/d/1zpXI_ZdCXFcY6tfKdABwmsJEuToYAy7cf42vugQF64k/edit#heading=h.5rf9wr4r3no2) - minjeeson.dev@gmail.com
 
 Project Link: [https://github.com/iammminzzy/portfolio](https://github.com/iammminzzy/portfolio)
 
