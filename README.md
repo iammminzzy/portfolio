@@ -5,32 +5,42 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<a href="https://github.com/iammminzzy/portfolio">
-  <img src="public/next.svg" alt="Logo" width="80" height="80">
-</a>
-
-<h3>Portfolio</h3>
-<a href="https://minjee.vercel.app/"><strong>View »</strong></a>
-<br />
-<br />
+🚀
+  <h3>Portfolio</h3>
+    <img src="https://github.com/iammminzzy/portfolio/assets/104430030/7717e1cf-2e0e-492f-b832-a6cb8273dbb0" alt="Demo" width="750" height="396">
+    <br />
+    <br />
+    <a href="https://minjee.vercel.app/"><strong>View »</strong></a>
 </div>
-
+<br />
+<br />
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
       <a href="#built-with">Built With</a>
     </li>
     <li>
-      <a href="#installation">Installation</a>
+      <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#demo">Demo</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+ <p>This is a portfolio site showcasing my journey and experiences as a frontend developer.<br />
+      Leveraging the <strong>latest features of Next.js 13</strong>, including App Router and Server Actions, the site is constructed.<br />
+      The styling is done using <strong>Tailwind CSS and Framer Motion</strong>, with the addition of email sending function through Resend.<br />
+      Of course, it's designed as a responsive page, feel free to explore my page on both <strong>desktop and mobile devices</strong>!</p>
+
+<!-- BUILT WITH -->
 
 ## Built With
 
@@ -68,12 +78,6 @@
    ```sh
    npm run dev
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- DEMO EXAMPLES -->
-
-## Demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
