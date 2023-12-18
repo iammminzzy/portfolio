@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mb-10 px-[25px] sml:px-[50px] mdl:px-[100px] lgl:px-[150px] text-center text-dark/60 font-bodyFont">
+    <footer className="pb-10 px-[25px] sml:px-[50px] mdl:px-[100px] lgl:px-[150px] text-center text-dark/60 bg-sectionColor font-bodyFont">
       <small className="mb-2 block text-xs">
         &copy; 2023 Minjee. All rights reserved.
       </small>

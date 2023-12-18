@@ -27,10 +27,10 @@ export const experiences = [
     endDate: "Jul 2023",
     description: [
       "Built a renewal project to process 3,000 reports monthly in the back-office, resulting in a 180% increase in revenue.",
-      "To enhance project scalability without technical debt, implemented delicate architectural planning, documentation, and thorough PRs and code reviews.",
-      "Migrated from Javascript to Typescript, improving code maintainability and leveraging the benefits of static typing.",
-      "Achieved a 30% reduction in API calls by utilizing Tanstack-Query to optimize cache and stale times for each API.",
-      "Achieved a 58% reduction(2.5s→1.05s) in Largest Contentful Paint(LCP) through image optimization using Next/image for improved web loading performance.",
+      "To enhance project maintainability without technical debt, implemented delicate architectural planning, documentation, and thorough PRs and code reviews.",
+      "Migrated from JavaScript to TypeScript, improving code maintainability and leveraging the benefits of static typing.",
+      "Achieved a 30% reduction in API calls by utilising Tanstack-Query to optimise cache and stale times for each API.",
+      "Achieved a 58% reduction(2.5s→1.05s) in Largest Contentful Paint(LCP) through image optimisation using Next/image for improved web loading performance.",
     ],
   },
   {
@@ -40,9 +40,9 @@ export const experiences = [
     startDate: "Sep 2022",
     endDate: "Dec 2022",
     description: [
-      "Led the MVP project and experienced the entire product lifecycle from inception to market release.",
+      "Led the MVP project and experienced the entire product lifecycle from its inception to market release.",
       "Implemented responsive design for screens ranging from desktop size down to as small as 280px for mobile, resulting in a 25% reduction in bounce rate on the first page and providing a seamless mobile user experience.",
-      "Introduced a multi-filtering feature to provide customized search options and effectively resolved performance issues by utilizing debouncing, memoization, and caching techniques.",
+      "Introduced a multi-filtering feature to provide customised search options and effectively resolved performance issues by utilising debouncing, memoisation, and caching.",
     ],
   },
   {
@@ -52,7 +52,7 @@ export const experiences = [
     startDate: "Aug 2022",
     endDate: "Sep 2022",
     description: [
-      "Improved user experience by implementing a desktop view for the mobile application using React.js.",
+      "Improved user experience by implementing a desktop view for the mobile application using React.",
       "Added a social login feature using OAuth 2.0, providing the ability for more users to easily sign in.",
     ],
   },
@@ -64,7 +64,7 @@ export const experiences = [
     endDate: "Aug 2022",
     description: [
       "Based on quick problem-solving abilities and strong collaborative skills, achieved 3 consecutive years of top performance evaluations and took on managerial responsibilities ahead of schedule.",
-      "Effectively communicated with international passengers by utilizing Japanese and English language skills.",
+      "Effectively communicated with international passengers by utilising Japanese and English language skills.",
     ],
   },
 ];

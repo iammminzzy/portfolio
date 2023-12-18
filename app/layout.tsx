@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${clashDisplay.variable} ${DMSans.variable}`}>
+      <body
+        className={`${clashDisplay.variable} ${DMSans.variable} bg-sectionColor text-dark`}
+      >
         <Header />
         <Social />
         <Email />

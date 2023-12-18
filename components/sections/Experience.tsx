@@ -3,12 +3,7 @@
 import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
-import {
-  fadeInVariants,
-  MotionDiv,
-  SectionTitle,
-  slideUpVariants,
-} from "@/components";
+import { MotionDiv, SectionTitle, slideUpVariants } from "@/components";
 import { experiences } from "@/libs/data";
 
 const Experience = () => {
@@ -50,8 +45,8 @@ const Experience = () => {
             return (
               <MotionDiv
                 key={id}
-                variants={fadeInVariants}
-                transition={{ delay: 0.1 }}
+                variants={slideUpVariants}
+                transition={{ delay: 0.1, duration: 0.5 }}
                 className="w-full"
               >
                 <h3 className="flex items-center gap-1 font-medium text-base sml:text-xl">
