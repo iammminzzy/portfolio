@@ -9,18 +9,13 @@ import {
 } from "@/public/images";
 
 export const sections = [
+  { id: 1, name: "Experience", hash: "#experience" },
   {
-    id: 1,
-    name: "About",
-    hash: "#about",
-  },
-  { id: 2, name: "Experience", hash: "#experience" },
-  {
-    id: 3,
+    id: 2,
     name: "Projects",
     hash: "#projects",
   },
-  { id: 4, name: "Contact", hash: "#contact" },
+  { id: 3, name: "Contact", hash: "#contact" },
 ] as const;
 
 export const experiences = [
