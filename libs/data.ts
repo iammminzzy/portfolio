@@ -86,9 +86,7 @@ export const projects: Project[] = [
     description:
       "Back-office application used by the tax team to assist clients with their tax filings. We introduced AI to automate the extraction of data from file records. This program presents the data and allows for corrections to be made if something's wrong. This transformation greatly improved efficiency and reduced the potential for errors.",
     skills: ["React", "Typescript", "Tanstack-Query", "Styled-Components"],
-    links: {
-      site: "/",
-    },
+    links: {},
   },
   {
     id: 2,
