@@ -27,10 +27,12 @@ export const experiences = [
     endDate: "Jul 2023",
     description: [
       "Built a renewal project to process 3,000 reports monthly in the back-office, resulting in a 180% increase in revenue.",
-      "To enhance project maintainability without technical debt, implemented delicate architectural planning, documentation, and thorough PRs and code reviews.",
-      "Migrated from JavaScript to TypeScript, improving code maintainability and leveraging the benefits of static typing.",
-      "Achieved a 30% reduction in API calls by utilising Tanstack-Query to optimise cache and stale times for each API.",
-      "Achieved a 58% reduction(2.5s→1.05s) in Largest Contentful Paint(LCP) through image optimisation using Next/image for improved web loading performance.",
+      "Migrated from JavaScript to TypeScript, leading to a 40% reduction in bug fixes and a 25% increase in code efficiency, ensuring a more stable platform for users.",
+      "Streamlined the product architecture and eliminated technical debt, boosting developer productivity by 20%.",
+      "Achieved a 30% reduction in API calls by utilising TanStack-Query to optimise cache and stale times for each API.",
+      "Attained a 58% reduction in Largest Contentful Paint(LCP) through image optimisation, enhancing web loading performance from 2.5s to 1.05s.",
+      "Accelerated the development speed by building an internal design system through collaboration with designers.",
+      "Gained experience in Agile process through 2-week sprints, scrums, and retrospectives.",
     ],
   },
   {
@@ -40,9 +42,9 @@ export const experiences = [
     startDate: "Sep 2022",
     endDate: "Dec 2022",
     description: [
-      "Led the MVP project and experienced the entire product lifecycle from its inception to market release.",
+      "Led the MVP project and experienced the entire product lifecycle from inception to market release.",
       "Implemented responsive design for screens ranging from desktop size down to as small as 280px for mobile, resulting in a 25% reduction in bounce rate on the first page and providing a seamless mobile user experience.",
-      "Introduced a multi-filtering feature to provide customised search options and effectively resolved performance issues by utilising debouncing, memoisation, and caching.",
+      "Introduced a multi-filtering feature to provide customised search options and effectively resolved performance issues by utilising debouncing, memoization, and caching techniques.",
     ],
   },
   {
@@ -52,8 +54,8 @@ export const experiences = [
     startDate: "Aug 2022",
     endDate: "Sep 2022",
     description: [
-      "Improved user experience by implementing a desktop view for the mobile application using React.",
-      "Added a social login feature using OAuth 2.0, providing the ability for more users to easily sign in.",
+      "Developed and implemented a React-based desktop view for the mobile application, significantly improving the user experience.",
+      "Utilised OAuth 2.0 to enable seamless social login functionality, expanding accessibility for users.",
     ],
   },
   {
