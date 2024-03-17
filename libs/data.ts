@@ -149,7 +149,7 @@ export const socialMedia = [
   },
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/iammminzzy",
+    url: "https://www.linkedin.com/in/iamminzzy",
   },
   {
     name: "Instagram",
