@@ -5,6 +5,7 @@ export default function Home() {
     <main className="w-full font-bodyFont overflow-x-hidden flex flex-col items-center px-[25px] sml:px-[50px] mdl:px-[100px] lgl:px-[150px]">
       1
       <Main />
+      2
       <Experience />
       <Projects />
       <Contact />
